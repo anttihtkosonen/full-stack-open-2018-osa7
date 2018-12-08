@@ -21,8 +21,6 @@ const extractToken = (request, response, next) => {
 
 
 
-
-
 morgan.token('content', function (req, res) { return JSON.stringify(req.body) })
 app.use(morgan(':method :url :content :status :res[content-length] - :response-time ms'))
 
@@ -44,7 +42,7 @@ app.use('/api/blogs', blogRouter)
 
 const server = http.createServer(app)
 
-server.listen(config.port || 3001)
+server.listen(config.port || 3000)
 
 /*
 server.listen(config.port, () => {
