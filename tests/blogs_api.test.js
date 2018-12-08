@@ -82,7 +82,6 @@ test('a new blog gets by default 0 likes', async () => {
 
   await api
     .post('/api/blogs')
-    const token = login.body.token
     .send(newBlog)
 
   const blogsAfterOperation = await api
