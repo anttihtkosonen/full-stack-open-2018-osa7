@@ -14,7 +14,7 @@
     "testURL": "http://localhost"
   },
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "https://github.com/kelektiv/node.bcrypt.js.git#master",
     "cors": "^2.8.5",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
