@@ -33,7 +33,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 
-mongoose.connect(config.mongoUrl)
+mongoose.connect(config.mongoUrl, { useNewUrlParser: true })
 mongoose.Promise = global.Promise
 
 
